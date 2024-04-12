@@ -36,20 +36,20 @@
   <script type="module">
     const schedulerEditor = document.querySelector('nylas-scheduler-editor');
     schedulerEditor.schedulerPreviewLink = `${window.location.origin}/?config_id={config.id}`;
-    // schedulerEditor.nylasSessionsConfig = {
-    //   clientId: '53bbaecc-13e7-42c8-be42-e900c780765a', // Replace with your Nylas client ID from the previous section
-    //   redirectUri: `${window.location.origin}/my-scheduler/scheduler-editor`,
-    //   domain: 'https://api.us.nylas.com/v3', // or 'https://api.eu.nylas.com/v3' for EU data center
-    //   hosted: true,
-    //   accessType: 'online',
-    // }
     schedulerEditor.nylasSessionsConfig = {
-      clientId: '364f30e8-df03-4555-9730-ce79f7e467b2', // Replace with your Nylas client ID from the previous section
+      clientId: '53bbaecc-13e7-42c8-be42-e900c780765a', // Replace with your Nylas client ID from the previous section
       redirectUri: `${window.location.origin}/my-scheduler/scheduler-editor`,
-      domain: 'https://api-staging.us.nylas.com/v3', // or 'https://api.eu.nylas.com/v3' for EU data center
+      domain: 'https://api.us.nylas.com/v3', // or 'https://api.eu.nylas.com/v3' for EU data center
       hosted: true,
       accessType: 'online',
     }
+    // schedulerEditor.nylasSessionsConfig = {
+    //   clientId: '364f30e8-df03-4555-9730-ce79f7e467b2', // Replace with your Nylas client ID from the previous section
+    //   redirectUri: `${window.location.origin}/my-scheduler/scheduler-editor`,
+    //   domain: 'https://api-staging.us.nylas.com/v3', // or 'https://api.eu.nylas.com/v3' for EU data center
+    //   hosted: true,
+    //   accessType: 'online',
+    // }
     schedulerEditor.defaultSchedulerConfigStoreState = {
         selectedConfiguration: {
             scheduler: {
