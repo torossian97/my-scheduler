@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@nylas/web-elements": "^1.1.0-canary.11"
+  }
+}
